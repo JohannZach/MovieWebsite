@@ -1,0 +1,50 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding-top: 56px; /* Prevent navbar overlap */
+}
+
+.navbar {
+    background-color: #111;
+}
+
+/* Image Styling */
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Set the image height */
+    width: 100%; /* Make sure image spans the full width */
+}
+
+/* Overlay Styles */
+.movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Genre Boxes */
+.genres {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Make sure the grid maintains uniformity */
+.movie-grid .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Space between cards */
+}
+
